@@ -1,4 +1,4 @@
-# gesturo
+# Guestro
 
 A new Flutter project.
 
