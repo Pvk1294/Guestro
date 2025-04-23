@@ -1,16 +1,27 @@
 # Guestro
 
-A new Flutter project.
+**Guestro** is a Flutter-based mobile application designed to assist users through gesture-based controls and smart safety features. Built solo as a capstone project, this app integrates seamlessly with Firebase and phone hardware to provide essential emergency functionalities.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- 🔐 **Authentication** — Login/signup powered by Firebase
+- 📇 **Emergency Contacts** — Add trusted contacts directly from your phone
+- 🔒 **Realtime Sync** — Secure data storage with Firebase integration
+- 🧠 More features coming soon — Stay tuned for gesture-based controls and more!
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter** — Cross-platform UI development
+- **Firebase Auth** — User authentication
+- **Firebase Firestore** — Realtime cloud storage
+- **Device APIs** — Access contacts from the phone
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Screenshots
+
+> Coming soon — will be added as features roll out!
+
+## 📍 Project Status
+
+This app is currently **in active development**. Core features like login and emergency contact integration are complete. More modules are planned for next week.
+
+## 👨‍💻 Made with ❤️ by Prateek Verma
