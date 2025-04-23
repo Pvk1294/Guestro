@@ -1,0 +1,51 @@
+name: gesturo
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.7.0
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.13.0
+  firebase_storage: ^12.4.5
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.6
+  google_sign_in: ^6.1.0
+  auto_size_text: ^3.0.0
+  image_picker: ^1.1.2
+  flutter_blue_plus: ^1.31.4
+  get: ^4.6.5
+  flutter_screenutil: ^5.7.0
+  permission_handler: ^11.3.0
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.1.11
+  flutter_contacts: ^1.1.7+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  leak_tracker: ^10.0.8
+  flutter_launcher_icons: ^0.14.3
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/logo_n.png
+    - assets/google_logo.png
+    - assets/apple_logo_light_mode.png
+    - assets/apple_logo_dark_mode.png
+    - assets/glove_logo.jpg
+

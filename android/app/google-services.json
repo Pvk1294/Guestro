@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "322888842794",
+    "project_id": "gesturo-a6e9c",
+    "storage_bucket": "gesturo-a6e9c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322888842794:android:9622fb3e75ab151a80cd53",
+        "android_client_info": {
+          "package_name": "com.example.gesturo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfOgl_QufS5pjdImb5WnuoaSRwy24VECw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
