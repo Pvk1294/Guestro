@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:gesturo/componets/navigation_bar.dart';
-import 'package:gesturo/pages/navigation_pages/SOS_page.dart';
-import 'package:gesturo/pages/navigation_pages/analytics_page.dart';
-import 'package:gesturo/pages/setttings_page/bluetooth_page.dart';
-import 'package:gesturo/pages/setttings_page/setting_page.dart';
+import 'package:Gesturo/componets/navigation_bar.dart';
+import 'package:Gesturo/pages/navigation_pages/SOS_page.dart';
+import 'package:Gesturo/pages/navigation_pages/analytics_page.dart';
+import 'package:Gesturo/pages/setttings_page/bluetooth_page.dart';
+import 'package:Gesturo/pages/setttings_page/setting_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -209,7 +209,7 @@ class _HomeContentWithGlovesCard extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const BluetoothPage(),
+                    builder: (context) => BluetoothDeviceListScreen(),
                   ),
                 );
               },

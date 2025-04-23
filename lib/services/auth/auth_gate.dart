@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:gesturo/pages/navigation_pages/home_page.dart';
-import 'package:gesturo/services/auth/login_or_register.dart';
+import 'package:Gesturo/pages/navigation_pages/home_page.dart';
+import 'package:Gesturo/services/auth/login_or_register.dart';
 
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});

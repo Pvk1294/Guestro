@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:gesturo/pages/account_page/login_page.dart';
-import 'package:gesturo/pages/account_page/register_page.dart';
+import 'package:Gesturo/pages/account_page/login_page.dart';
+import 'package:Gesturo/pages/account_page/register_page.dart';
 
 class LoginOrRegister extends StatefulWidget {
   const LoginOrRegister({super.key});

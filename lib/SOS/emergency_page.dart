@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gesturo/SOS/emergency_contacts_page.dart';
+import 'package:Gesturo/SOS/emergency_contacts_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:url_launcher/url_launcher.dart';

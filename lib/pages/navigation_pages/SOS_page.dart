@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gesturo/SOS/emergency_page.dart';
-import 'package:gesturo/SOS/live_location.dart';
+import 'package:Gesturo/SOS/emergency_page.dart';
+import 'package:Gesturo/SOS/live_location.dart';
 
 class SOSPage extends StatefulWidget {
   const SOSPage({super.key});

@@ -1,4 +1,4 @@
-name: gesturo
+name: Gesturo
 description: "A new Flutter project."
 publish_to: 'none'
 
@@ -19,13 +19,13 @@ dependencies:
   google_sign_in: ^6.1.0
   auto_size_text: ^3.0.0
   image_picker: ^1.1.2
-  flutter_blue_plus: ^1.31.4
   get: ^4.6.5
   flutter_screenutil: ^5.7.0
   permission_handler: ^11.3.0
   shared_preferences: ^2.2.2
   url_launcher: ^6.1.11
   flutter_contacts: ^1.1.7+1
+  flutter_blue_plus: ^1.35.4
 
 dev_dependencies:
   flutter_test:

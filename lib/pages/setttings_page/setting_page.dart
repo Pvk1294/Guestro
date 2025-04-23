@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gesturo/pages/setttings_page/Profile_page.dart';
-import 'package:gesturo/pages/setttings_page/bluetooth_page.dart';
-import 'package:gesturo/services/auth/auth_services.dart';
+import 'package:Gesturo/pages/setttings_page/Profile_page.dart';
+import 'package:Gesturo/pages/setttings_page/bluetooth_page.dart';
+import 'package:Gesturo/services/auth/auth_services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:gesturo/pages/account_page/login_page.dart';
+import 'package:Gesturo/pages/account_page/login_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -42,9 +42,9 @@ class _SettingsPageState extends State<SettingsPage> {
         (route) => false,
       );
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Logout failed: ${e.toString()}')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Logout failed: ${e.toString()}')));
     }
   }
 
@@ -74,12 +74,14 @@ class _SettingsPageState extends State<SettingsPage> {
                   children: [
                     CircleAvatar(
                       radius: 40,
-                      backgroundImage: widget.user?.photoURL != null
-                          ? NetworkImage(widget.user!.photoURL!)
-                          : null,
-                      child: widget.user?.photoURL == null
-                          ? const Icon(Icons.person, size: 40)
-                          : null,
+                      backgroundImage:
+                          widget.user?.photoURL != null
+                              ? NetworkImage(widget.user!.photoURL!)
+                              : null,
+                      child:
+                          widget.user?.photoURL == null
+                              ? const Icon(Icons.person, size: 40)
+                              : null,
                     ),
                     const SizedBox(height: 16),
                     Text(
@@ -89,9 +91,9 @@ class _SettingsPageState extends State<SettingsPage> {
                     const SizedBox(height: 4),
                     Text(
                       widget.user?.email ?? 'No email provided',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: Colors.grey[600],
-                          ),
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodyMedium?.copyWith(color: Colors.grey[600]),
                     ),
                   ],
                 ),
@@ -104,12 +106,16 @@ class _SettingsPageState extends State<SettingsPage> {
               context,
               icon: Icons.edit,
               title: 'Edit Profile',
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => EditProfilePage(user: widget.user), // Passing user here
-                ),
-              ),
+              onTap:
+                  () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder:
+                          (context) => EditProfilePage(
+                            user: widget.user,
+                          ), // Passing user here
+                    ),
+                  ),
             ),
 
             _buildLanguageDropdown(context),
@@ -118,10 +124,13 @@ class _SettingsPageState extends State<SettingsPage> {
               context,
               icon: Icons.bluetooth,
               title: 'Device Settings',
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const BluetoothPage()),
-              ),
+              onTap:
+                  () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BluetoothDeviceListScreen(),
+                    ),
+                  ),
             ),
 
             const SizedBox(height: 100),
@@ -171,12 +180,15 @@ class _SettingsPageState extends State<SettingsPage> {
         trailing: DropdownButton<String>(
           value: _currentLanguage,
           underline: const SizedBox(),
-          items: ['ISL', 'BSL', 'ASL']
-              .map((language) => DropdownMenuItem(
-                    value: language,
-                    child: Text(language),
-                  ))
-              .toList(),
+          items:
+              ['ISL', 'BSL', 'ASL']
+                  .map(
+                    (language) => DropdownMenuItem(
+                      value: language,
+                      child: Text(language),
+                    ),
+                  )
+                  .toList(),
           onChanged: (String? newValue) async {
             if (newValue != null) {
               SharedPreferences prefs = await SharedPreferences.getInstance();

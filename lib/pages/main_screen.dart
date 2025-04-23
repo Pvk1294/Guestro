@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gesturo/componets/navigation_bar.dart';
-import 'package:gesturo/pages/navigation_pages/SOS_page.dart';
+import 'package:Gesturo/componets/navigation_bar.dart';
+import 'package:Gesturo/pages/navigation_pages/SOS_page.dart';
 
 
 class MainScreen extends StatefulWidget {

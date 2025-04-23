@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gesturo/componets/button.dart';
-import 'package:gesturo/componets/text_box.dart';
-import 'package:gesturo/services/auth/auth_services.dart';
+import 'package:Gesturo/componets/button.dart';
+import 'package:Gesturo/componets/text_box.dart';
+import 'package:Gesturo/services/auth/auth_services.dart';
 
 class LoginPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
