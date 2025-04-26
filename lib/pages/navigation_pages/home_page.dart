@@ -4,6 +4,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:Gesturo/componets/navigation_bar.dart';
 import 'package:Gesturo/pages/navigation_pages/SOS_page.dart';
 import 'package:Gesturo/pages/navigation_pages/analytics_page.dart';
+import 'package:Gesturo/pages/navigation_pages/message_page.dart';
 import 'package:Gesturo/pages/setttings_page/bluetooth_page.dart';
 import 'package:Gesturo/pages/setttings_page/setting_page.dart';
 
@@ -21,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _screens = [
     _HomeContentWithGlovesCard(),
     const AnalyticsPage(),
-    const Center(child: Text('Message Content')),
+    MessagePage(),
     const SOSPage(),
   ];
 

@@ -1,7 +1,7 @@
+import 'package:Gesturo/pages/navigation_pages/message_page.dart';
 import 'package:flutter/material.dart';
 import 'package:Gesturo/componets/navigation_bar.dart';
 import 'package:Gesturo/pages/navigation_pages/SOS_page.dart';
-
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -16,7 +16,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _screens = [
     const Center(child: Text('Home Content')),
     const Center(child: Text('Analytics Content')),
-    const Center(child: Text('Message Content')),
+    MessagePage(),
     const SOSPage(),
   ];
 

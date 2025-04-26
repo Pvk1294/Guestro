@@ -22,10 +22,14 @@ android {
 
     defaultConfig {
         applicationId = "com.example.gesturo"
-        minSdk = 23
+        minSdk = 21  // Minimum SDK for speech_to_text
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        multiDexEnabled = true
+        ndk {
+            abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86_64")
+        }
     }
 
     buildTypes {
@@ -41,4 +45,6 @@ flutter {
 
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
+    implementation("androidx.multidex:multidex:2.0.1")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0")
 }
